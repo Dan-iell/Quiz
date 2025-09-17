@@ -1,7 +1,7 @@
 const quizData = [
   {
     question: "What is the capital of France?",
-    options: ["Berlin", "Madrid", "Paris", "Rome"],
+    options: ["Paris", "Berlin", "Madrid", "Rome"],
     answer: "Paris",
   },
   {
@@ -11,7 +11,7 @@ const quizData = [
   },
   {
     question: "Who developed the theory of relativity?",
-    options: ["Isaac Newton", "Albert Einstein", "Nikola Tesla", "Galileo"],
+    options: ["Isaac Newton", "Nikola Tesla", "Galileo", "Albert Einstein"],
     answer: "Albert Einstein",
   },
 ];
@@ -60,4 +60,5 @@ function checkAnswer(selected) {
 }
 
 loadQuestion();
+
 
