@@ -25,7 +25,6 @@ const messageEl = document.getElementById("message");
 const scoreEl = document.getElementById("score");
 
 function loadQuestion() {
-  // Clear previous data
   optionsEl.innerHTML = "";
   messageEl.textContent = "";
 
@@ -40,7 +39,6 @@ function loadQuestion() {
       optionsEl.appendChild(button);
     });
   } else {
-    // Quiz finished
     questionEl.textContent = "Quiz Completed!";
     scoreEl.textContent = `Your final score is ${score}/${quizData.length}`;
   }
@@ -61,5 +59,5 @@ function checkAnswer(selected) {
   setTimeout(loadQuestion, 1500);
 }
 
-// Load first question
 loadQuestion();
+
